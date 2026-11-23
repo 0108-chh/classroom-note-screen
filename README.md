@@ -28,7 +28,13 @@
 | `android-device/` | Android 被控端（悬浮窗 + 前台服务 + 开机自启） | Android 6.0+ |
 | `android-remote/` | 老师手机控制端（扫码绑定、多设备群发、5 色便签） | Android 7.0+ |
 
-构建产物不入库（`.exe` / `.apk` 见 [Releases](../../releases) 或自行打包）。
+构建产物不入库，直接下载现成的安装包：[Releases](https://github.com/0108-chh/classroom-note-screen/releases/latest)
+
+| 下载文件 | 装在哪 |
+|---|---|
+| `classroom-note-screen-x.y.z.exe` | 教室 Windows 电脑 / 智慧黑板 |
+| `note-device-x.y.z.apk` | 教室 Android 智能屏（被控端） |
+| `note-remote-x.y.z.apk` | 老师手机（控制端） |
 
 ## 第一次配置（每台大屏一次）
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>便签</title>
+<link rel="stylesheet" href="note.css?v=100">
+</head>
+<body class="amber">
+  <div class="note" id="note">
+    <div class="tape"></div>
+    <div class="bar" id="bar">
+      <span class="pin">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5v9m0 0-2.6 2.6M12 12.5l2.6 2.6M12 17v3.5" stroke="currentColor" stroke-width="0"/><circle cx="12" cy="7" r="2.6" stroke="currentColor" stroke-width="1.7"/><path d="M6.5 20.5c1.6-3.4 3.1-5.4 5.5-8.4 2.4 3 3.9 5 5.5 8.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="meta" id="meta">来自老师的手机</span>
+      <button class="x" id="btnClose" title="关闭便签">
+        <svg viewBox="0 0 24 24" fill="none"><path d="m7 7 10 10M17 7 7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div class="body" id="body"><p class="text" id="text"></p></div>
+
+    <div class="bar bottom">
+      <span class="time" id="time"></span>
+      <div class="nav" id="nav">
+        <button id="btnPrev" title="上一条">
+          <svg viewBox="0 0 24 24" fill="none"><path d="m14 6-6 6 6 6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <span id="counter">1 / 1</span>
+        <button id="btnNext" title="下一条">
+          <svg viewBox="0 0 24 24" fill="none"><path d="m10 6 6 6-6 6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+<script src="note.js?v=100"></script>
+</body>
+</html>

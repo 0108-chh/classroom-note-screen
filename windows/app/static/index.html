@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>班级便签屏 · 本机</title>
+<link rel="stylesheet" href="style.css?v=101">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 4.5h9.5L19 9v10.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-14a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 4.6V9h4.4M8 13h7M8 16.5h4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <div>
+        <h1>班级便签屏</h1>
+        <p>本机被控端 · 常驻后台接收老师便签</p>
+      </div>
+    </div>
+    <div class="chip" id="chip"><i></i><span id="chipText">正在连接…</span></div>
+  </header>
+
+  <main class="grid">
+    <section class="card pair-card">
+      <div class="card-head">
+        <h2>扫码绑定</h2>
+        <span class="tag" id="devTag">设备号 —</span>
+      </div>
+      <div class="qr-wrap">
+        <div class="qr-box"><img id="qr" alt="配对二维码"></div>
+        <div class="pair-info">
+          <p class="lead">老师用手机 App 扫这个码，就把这台大屏绑定到他的控制端。</p>
+          <div class="kv">
+            <span>设备号</span><code id="devId">—</code>
+          </div>
+          <div class="kv">
+            <span>配对密钥</span><code id="devKey">—</code>
+          </div>
+          <div class="kv">
+            <span>设备名称</span>
+            <input id="devName" maxlength="24" spellcheck="false" placeholder="例如 高一(2)班 一体机">
+          </div>
+          <p class="hint" id="pairHint">设备号与密钥固定在本机，重启不变；换电脑才会变。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><h2>公网通道</h2><span class="tag soft">无需注册</span></div>
+      <ul class="brokers" id="brokers"></ul>
+      <p class="hint">同时连接多个免费中转节点，任意一个连通即可收便签；手机控制端会用同一份节点列表。</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><h2>最近便签</h2><button class="mini" id="btnClear">清空记录</button></div>
+      <ul class="notes" id="notes"></ul>
+    </section>
+  </main>
+
+  <footer class="footbar">
+    <div class="foot-tip">关闭此窗口只会缩到系统托盘，程序仍在后台接收便签。</div>
+    <div class="foot-actions">
+      <button class="btn ghost" id="btnTest">测试弹一条</button>
+      <button class="btn ghost" id="btnHide">收进托盘</button>
+      <button class="btn danger" id="btnQuit">退出程序</button>
+    </div>
+  </footer>
+</div>
+<div class="toasts" id="toasts"></div>
+<script src="app.js?v=102"></script>
+</body>
+</html>

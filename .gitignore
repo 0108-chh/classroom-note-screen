@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.spec
+
+# Windows 打包产物
+windows/build/
+windows/dist/
+dist/
+
+# Android 构建产物与本地配置
+.gradle/
+android-device/build/
+android-remote/build/
+android-device/.gradle/
+android-remote/.gradle/
+android-device/app/build/
+android-remote/app/build/
+android-device/local.properties
+android-remote/local.properties
+local.properties
+
+# 签名与安装包（自行打包生成，不入库）
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

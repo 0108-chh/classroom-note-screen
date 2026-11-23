@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F4F9"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加教室大屏"
+            android:textColor="#171C26"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:lineSpacingExtra="3dp"
+            android:text="在被控大屏的首页会显示一个二维码，扫一下就能绑定；也可以手动输入设备号和密钥。"
+            android:textColor="#8B94A6"
+            android:textSize="11.5sp" />
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_primary"
+            android:text="扫码绑定"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14.5sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="或手动填写"
+            android:textColor="#98A2B3"
+            android:textSize="11.5sp" />
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="monospace"
+            android:hint="设备号（6 位，如 A3F9KD）"
+            android:inputType="textCapCharacters"
+            android:maxLength="8"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:textColor="#171C26"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:fontFamily="monospace"
+            android:hint="配对密钥（10 位）"
+            android:inputType="textCapCharacters"
+            android:maxLength="12"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:textColor="#171C26"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_input"
+            android:hint="备注名称，例如 高一(2)班"
+            android:inputType="text"
+            android:maxLength="20"
+            android:padding="13dp"
+            android:singleLine="true"
+            android:textColor="#171C26"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_ghost"
+            android:text="保存绑定"
+            android:textAllCaps="false"
+            android:textColor="#2F6BFF"
+            android:textSize="14.5sp" />
+    </LinearLayout>
+</ScrollView>
